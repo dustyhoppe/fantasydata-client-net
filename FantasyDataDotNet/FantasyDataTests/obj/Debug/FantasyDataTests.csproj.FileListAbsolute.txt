@@ -1,0 +1,6 @@
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyDataTests\bin\Debug\FantasyDataTests.dll.config
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyDataTests\bin\Debug\FantasyDataTests.dll
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyDataTests\bin\Debug\FantasyDataTests.pdb
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyDataTests\obj\Debug\FantasyDataTests.csprojResolveAssemblyReference.cache
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyDataTests\obj\Debug\FantasyDataTests.dll
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyDataTests\obj\Debug\FantasyDataTests.pdb

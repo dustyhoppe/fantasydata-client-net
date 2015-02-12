@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.0.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -41,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="Configuration\FantasyDataAccountElement.cs" />
-    <Compile Include="Configuration\FantasyDataAccountElementCollection.cs" />
-    <Compile Include="Configuration\FantasyDataAccountRetrieverSection.cs" />
+    <Compile Include="Configuration\FantasyDataSubscriptionElement.cs" />
+    <Compile Include="Configuration\FantasyDataSubscriptionElementCollection.cs" />
+    <Compile Include="Configuration\FantasyDataSubscriptionRetrieverSection.cs" />
+    <Compile Include="FantasyDataApiBase.cs" />
+    <Compile Include="FantasyDataClient.cs" />
+    <Compile Include="FantasyDataException.cs" />
+    <Compile Include="IFantasyDataEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

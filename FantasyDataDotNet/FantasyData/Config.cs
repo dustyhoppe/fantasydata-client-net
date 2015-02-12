@@ -49,10 +49,13 @@ namespace FantasyData
     /// <summary>
     /// 
     /// </summary>
-    public static string ApiBaseUrl
+    public static Uri ApiBaseUrl
     {
       get
       {
+        var config = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
+        FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
+
         throw new NotImplementedException();
       }
     }
@@ -62,7 +65,7 @@ namespace FantasyData
     /// </summary>
     static Config()
     {
-      var configuration = ConfigurationManager.GetSection("fantasyData") as FantasyDataAccountRetrieverSection;
+      var configuration = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
     }
   }
 }
