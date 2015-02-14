@@ -50,10 +50,18 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ConfigTests.cs" />
+    <Compile Include="FantasyDataApiBaseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FantasyData\FantasyData.csproj">
+      <Project>{eec3d83b-a3ea-4196-9557-80e40fb7bdec}</Project>
+      <Name>FantasyData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

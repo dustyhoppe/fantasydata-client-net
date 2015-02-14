@@ -20,7 +20,9 @@ namespace FantasyData
     {
       get
       {
-        throw new NotImplementedException();
+        var config = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
+        FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
+        return section.PrimarySubscriptionKey;
       }
     }
 
@@ -31,7 +33,9 @@ namespace FantasyData
     {
       get
       {
-        throw new NotImplementedException();
+        var config = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
+        FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
+        return section.SecondarySubscriptionKey;
       }
     }
 
@@ -42,7 +46,9 @@ namespace FantasyData
     {
       get
       {
-        throw new NotImplementedException();
+        var config = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
+        FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
+        return section.UseJSON;
       }
     }
 
@@ -55,17 +61,8 @@ namespace FantasyData
       {
         var config = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
         FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
-
-        throw new NotImplementedException();
+        return section.ApiBaseUrl;
       }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    static Config()
-    {
-      var configuration = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
     }
   }
 }

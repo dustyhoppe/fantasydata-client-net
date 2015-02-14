@@ -22,12 +22,12 @@ namespace FantasyData.Configuration
       }
     }
 
-    [ConfigurationProperty("baseUrl", IsRequired = true, DefaultValue = "NotSet")]
+    [ConfigurationProperty("baseUrl", IsRequired = true, DefaultValue = "http://api.nfldata.apiphany.com/developer/")]
     public Uri ApiBaseUrl
     {
       get
       {
-        return new Uri((string)this["baseUrl"]);
+        return (Uri)this["baseUrl"];
       }
       set
       {
