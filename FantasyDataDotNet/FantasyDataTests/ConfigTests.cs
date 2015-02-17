@@ -12,24 +12,14 @@ namespace FantasyDataTests
   public class ConfigTests
   {
     // trial config values
-    private const bool TrialUseJson = true;
     private const string TrialPrimarySubscriptionKey = "2be754f0c319454cb4832d0f524f596b";
     private const string TrialSecondarySubscriptionKey = "d2ac4b33ae794fa5ae758dae48283441";
     private const string TrialApiBaseUrl = "http://api.nfldata.apiphany.com/trial/";
 
     // developer config values
-    private const bool DeveloperUseJson = true;
     private const string DeveloperPrimarySubscriptionKey = "2be754f0c319454cb4832d0f524f596b";
     private const string DeveloperSecondarySubscriptionKey = "d2ac4b33ae794fa5ae758dae48283441";
     private const string DeveloperApiBaseUrl = "http://api.nfldata.apiphany.com/developer/";
-
-    [TestMethod]
-    public void TrialSubscription_UseJson_IsTrue()
-    {
-      var value = Config.UseJSON;
-
-      Assert.IsTrue(value);
-    }
 
     [TestMethod]
     public void TrialSubscription_ApiBaseUrl_IsNotNull()

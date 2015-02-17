@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData", "FantasyData\FantasyData.csproj", "{EEC3D83B-A3EA-4196-9557-80E40FB7BDEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyDataTests", "FantasyDataTests\FantasyDataTests.csproj", "{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.Entities", "FantasyData.Entities\FantasyData.Entities.csproj", "{BC47B76C-8494-4E03-869F-1919DE486774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyData.Utils", "FantasyData.Utils\FantasyData.Utils.csproj", "{5BF79131-00F6-4F98-975B-8FA84896B710}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8E7C0D2-E36B-43FF-8075-8636BAC6779B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC47B76C-8494-4E03-869F-1919DE486774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC47B76C-8494-4E03-869F-1919DE486774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC47B76C-8494-4E03-869F-1919DE486774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC47B76C-8494-4E03-869F-1919DE486774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF79131-00F6-4F98-975B-8FA84896B710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF79131-00F6-4F98-975B-8FA84896B710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF79131-00F6-4F98-975B-8FA84896B710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF79131-00F6-4F98-975B-8FA84896B710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

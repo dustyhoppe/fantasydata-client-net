@@ -58,6 +58,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FantasyData.Entities\FantasyData.Entities.csproj">
+      <Project>{bc47b76c-8494-4e03-869f-1919de486774}</Project>
+      <Name>FantasyData.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FantasyData\FantasyData.csproj">
       <Project>{eec3d83b-a3ea-4196-9557-80e40fb7bdec}</Project>
       <Name>FantasyData</Name>

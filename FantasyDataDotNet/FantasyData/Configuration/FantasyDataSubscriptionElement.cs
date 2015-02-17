@@ -60,18 +60,5 @@ namespace FantasyData.Configuration
         this["secondarySubscriptionKey"] = value;
       }
     }
-
-    [ConfigurationProperty("useJson", IsRequired = false, DefaultValue = false)]
-    public bool UseJSON
-    {
-      get
-      {
-        return (bool)this["useJson"];
-      }
-      set
-      {
-        this["useJson"] = value;
-      }
-    }
   }
 }

@@ -42,19 +42,6 @@ namespace FantasyData
     /// <summary>
     /// 
     /// </summary>
-    public static bool UseJSON
-    {
-      get
-      {
-        var config = ConfigurationManager.GetSection("fantasyData") as FantasyDataSubscriptionRetrieverSection;
-        FantasyDataSubscriptionElement section = config.GetFirstOrDefault();
-        return section.UseJSON;
-      }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
     public static Uri ApiBaseUrl
     {
       get

@@ -1,0 +1,4 @@
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Entities\bin\Debug\FantasyData.Entities.dll
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Entities\bin\Debug\FantasyData.Entities.pdb
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Entities\obj\Debug\FantasyData.Entities.dll
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Entities\obj\Debug\FantasyData.Entities.pdb

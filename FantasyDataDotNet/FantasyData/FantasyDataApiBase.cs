@@ -10,13 +10,11 @@ namespace FantasyData
 {
   public class FantasyDataApiBase
   {
-    private const string XML = "XML";
     private const string JSON = "JSON";
 
     #region Properties and Accessors
 
     protected string BaseUrl { get; private set; }
-    protected bool UseJSON { get; private set; }
     protected string PrimarySubscriptionKey { get; private set; }
     protected string SecondarySubscriptionKey { get; private set; }
 
@@ -54,7 +52,6 @@ namespace FantasyData
         baseUrl = baseUrl.Substring(0, baseUrl.Length - 1);
 
       BaseUrl = baseUrl;
-      UseJSON = false;
 
       _client = new RestClient();
       _client.UserAgent = UserAgent;
@@ -62,10 +59,9 @@ namespace FantasyData
     }
 
 
-    public FantasyDataApiBase(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey, bool useJSON)
+    public FantasyDataApiBase(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
       : this(baseUrl, primarySubscriptionKey)
     {
-      UseJSON = useJSON;
       SecondarySubscriptionKey = secondarySubscriptionKey;
     }
 
@@ -96,27 +92,37 @@ namespace FantasyData
       return response.Data;
     }
 
+    protected int GetInt(string path, params object[] args)
+    {
+      RestRequest request = new RestRequest(BuildUrl(path, args));
+      InitializeRequest(request);
+
+      var response = _client.Execute(request);
+
+      if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+      {
+        throw new FantasyDataException("Not Found");
+      }
+      else if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+      {
+        throw new FantasyDataException("Internal Server Error");
+      }
+
+      return Convert.ToInt32(response.Content);
+    }
 
     public string BuildUrl(string path, params object[] args)
     {
-      var formatPart = string.Format("/{0}", (UseJSON ? JSON : XML));
+      var formatPart = string.Format("/{0}", JSON);
 
-      return formatPart + string.Format(path, args) + string.Format("{0}subscription-key",(args.Length == 0 ? '?' : '&')) + GetSubscriptionKey();
+      return formatPart + string.Format(path, args) + string.Format("{0}subscription-key={1}", (args.Length == 0 ? '?' : '&'), GetSubscriptionKey());
     }
 
 
     public void InitializeRequest(RestRequest request)
     {
-      if (request.Resource.ToLowerInvariant().Contains("xml"))
-      {
-        request.RequestFormat = DataFormat.Xml;
-        request.XmlSerializer = new RestSharp.Serializers.DotNetXmlSerializer();
-      }
-      else
-      {
-        request.RequestFormat = DataFormat.Json;
-        request.JsonSerializer = new JsonSerializer();
-      }
+      request.RequestFormat = DataFormat.Json;
+      request.JsonSerializer = new JsonSerializer();
     }
 
     public string GetSubscriptionKey()
