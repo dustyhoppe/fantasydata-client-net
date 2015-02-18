@@ -40,9 +40,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyFantasyPlayer.cs" />
+    <Compile Include="FantasyDefenseGame.cs" />
+    <Compile Include="FantasyDefenseSeason.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Injury.cs" />
     <Compile Include="News.cs" />
-    <Compile Include="NewsItem.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerGame.cs" />
+    <Compile Include="PlayerSeason.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScoringDetail.cs" />
+    <Compile Include="StadiumDetails.cs" />
+    <Compile Include="Standing.cs" />
+    <Compile Include="Team.cs" />
     <Compile Include="TeamByeWeek.cs" />
     <Compile Include="Teams.cs" />
   </ItemGroup>

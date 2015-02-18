@@ -21,28 +21,29 @@ namespace FantasyDataTests
     private const string DeveloperSecondarySubscriptionKey = "d2ac4b33ae794fa5ae758dae48283441";
     private const string DeveloperApiBaseUrl = "http://api.nfldata.apiphany.com/developer/";
 
-    [TestMethod]
-    public void TrialSubscription_ApiBaseUrl_IsNotNull()
-    {
-      var value = Config.ApiBaseUrl;
 
-      Assert.IsNotNull(value);
-    }
+    //[TestMethod]
+    //public void TrialSubscription_ApiBaseUrl_IsNotNull()
+    //{
+    //  var value = Config.ApiBaseUrl;
 
-    [TestMethod]
-    public void TrialSubscription_PrimarySubscriptionKey_Matches()
-    {
-      var value = Config.PrimarySubscriptionKey;
+    //  Assert.IsNotNull(value);
+    //}
 
-      Assert.AreEqual(value, TrialPrimarySubscriptionKey);
-    }
+    //[TestMethod]
+    //public void TrialSubscription_PrimarySubscriptionKey_Matches()
+    //{
+    //  var value = Config.PrimarySubscriptionKey;
 
-    [TestMethod]
-    public void TrialSubscription_SecondarySubscriptionKey_Matches()
-    {
-      var value = Config.SecondarySubscriptionKey;
+    //  Assert.AreEqual(value, TrialPrimarySubscriptionKey);
+    //}
 
-      Assert.AreEqual(value, TrialSecondarySubscriptionKey);
-    }
+    //[TestMethod]
+    //public void TrialSubscription_SecondarySubscriptionKey_Matches()
+    //{
+    //  var value = Config.SecondarySubscriptionKey;
+
+    //  Assert.AreEqual(value, TrialSecondarySubscriptionKey);
+    //}
   }
 }

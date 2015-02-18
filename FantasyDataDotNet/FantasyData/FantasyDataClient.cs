@@ -15,6 +15,13 @@ namespace FantasyData
     public IDailyFantasyService DailyFantasyService { get; private set; }
     public ISeasonService SeasonService { get; private set; }
     public INewsService NewsService { get; private set; }
+    public IPlayerGameStatService PlayerGameStatService { get; private set; }
+    public IPlayerSeasonStatService PlayerSeasonStatService { get; private set; }
+    public ITeamDefenseService TeamDefenseService { get; private set; }
+    public IGameService GameService { get; private set; }
+    public IInjuryService InjuryService { get; private set; }
+    public IStadiumService StadiumService { get; private set; }
+    public ITeamService TeamService { get; private set; }
 
     #endregion
 
@@ -27,12 +34,18 @@ namespace FantasyData
     /// <param name="apiBaseUrl"></param>
     /// <param name="primarySubscriptionKey"></param>
     /// <param name="secondarySubscriptionKey"></param>
-    /// <param name="useJSON"></param>
     public FantasyDataClient(Uri apiBaseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
     {
       DailyFantasyService = new DailyFantasyService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
       SeasonService = new SeasonService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
       NewsService = new NewsService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      PlayerGameStatService = new PlayerGameStatService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      PlayerSeasonStatService = new PlayerSeasonStatService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      TeamDefenseService = new TeamDefenseService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      GameService = new GameService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      InjuryService = new InjuryService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      StadiumService = new StadiumService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      TeamService = new TeamService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
     }
 
     /// <summary>

@@ -9,7 +9,12 @@ namespace FantasyData.Services.Contracts
 {
   public interface ISeasonService
   {
-    int GetCurrentSeason();
+    int UpcomingSeason { get; }
+    int UpcomingWeek { get; }
+    int CurrentSeason { get; }
+    int CurrentWeek { get; }
+    int LastCompletedSeason { get; }
+    int LastCompletedWeek { get; }
     IEnumerable<TeamByeWeek> GetByeWeeks(int season);
   }
 }

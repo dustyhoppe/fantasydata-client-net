@@ -53,11 +53,27 @@
     <Compile Include="IFantasyDataEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Contracts\IDailyFantasyService.cs" />
+    <Compile Include="Services\Contracts\IGameService.cs" />
+    <Compile Include="Services\Contracts\IInjuryService.cs" />
     <Compile Include="Services\Contracts\INewsService.cs" />
+    <Compile Include="Services\Contracts\IPlayerGameStatService.cs" />
+    <Compile Include="Services\Contracts\IPlayerSeasonStatService.cs" />
+    <Compile Include="Services\Contracts\IPlayerService.cs" />
     <Compile Include="Services\Contracts\ISeasonService.cs" />
+    <Compile Include="Services\Contracts\IStadiumService.cs" />
+    <Compile Include="Services\Contracts\ITeamDefenseService.cs" />
+    <Compile Include="Services\Contracts\ITeamService.cs" />
     <Compile Include="Services\DailyFantasyService.cs" />
+    <Compile Include="Services\GameService.cs" />
+    <Compile Include="Services\InjuryService.cs" />
     <Compile Include="Services\NewsService.cs" />
+    <Compile Include="Services\PlayerGameStatService.cs" />
+    <Compile Include="Services\PlayerSeasonStatService.cs" />
+    <Compile Include="Services\PlayerService.cs" />
     <Compile Include="Services\SeasonService.cs" />
+    <Compile Include="Services\StadiumService.cs" />
+    <Compile Include="Services\TeamDefenseService.cs" />
+    <Compile Include="Services\TeamService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

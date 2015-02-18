@@ -24,6 +24,7 @@ namespace FantasyDataTests
       Assert.IsNotNull(response);
     }
 
+    /*
     [TestMethod]
     public void CurrentSeason_Is_2014()
     {
@@ -62,6 +63,17 @@ namespace FantasyDataTests
       var response = client.NewsService.GetForPlayer(4631);
 
       Assert.IsTrue(response.Count() > 0);
+    }
+    */
+
+    [TestMethod]
+    public void Get_PlayerGameStats_ForPeytonManning_Week1_2014()
+    {
+      var client = new FantasyDataClient();
+
+      var response = client.PlayerGameStatService.GetByGame(7328, 1, 2014);
+
+      Assert.IsTrue(response.PassingTouchdowns == 3);
     }
   }
 }

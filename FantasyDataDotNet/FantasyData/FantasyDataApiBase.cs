@@ -111,6 +111,25 @@ namespace FantasyData
       return Convert.ToInt32(response.Content);
     }
 
+    protected bool GetBool(string path, params object[] args)
+    {
+      RestRequest request = new RestRequest(BuildUrl(path, args));
+      InitializeRequest(request);
+
+      var response = _client.Execute(request);
+
+      if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+      {
+        throw new FantasyDataException("Not Found");
+      }
+      else if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+      {
+        throw new FantasyDataException("Internal Server Error");
+      }
+
+      return Convert.ToBoolean(response.Content);
+    }
+
     public string BuildUrl(string path, params object[] args)
     {
       var formatPart = string.Format("/{0}", JSON);
