@@ -22,6 +22,7 @@ namespace FantasyData
     public IInjuryService InjuryService { get; private set; }
     public IStadiumService StadiumService { get; private set; }
     public ITeamService TeamService { get; private set; }
+    public IBoxScoreService BoxScoreService { get; private set; }
 
     #endregion
 
@@ -46,6 +47,7 @@ namespace FantasyData
       InjuryService = new InjuryService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
       StadiumService = new StadiumService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
       TeamService = new TeamService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
+      BoxScoreService = new BoxScoreService(apiBaseUrl.AbsoluteUri, primarySubscriptionKey, secondarySubscriptionKey);
     }
 
     /// <summary>

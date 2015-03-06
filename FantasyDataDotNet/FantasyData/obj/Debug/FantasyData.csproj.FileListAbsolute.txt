@@ -1,11 +1,11 @@
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.dll
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.pdb
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Entities.dll
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Utils.dll
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\RestSharp.dll
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Entities.pdb
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Utils.pdb
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\RestSharp.xml
+C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\obj\Debug\FantasyData.csprojResolveAssemblyReference.cache
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\obj\Debug\FantasyData.dll
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\obj\Debug\FantasyData.pdb
-C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\obj\Debug\FantasyData.csprojResolveAssemblyReference.cache
-C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Entities.dll
-C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Entities.pdb
-C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Utils.dll
-C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData\bin\Debug\FantasyData.Utils.pdb

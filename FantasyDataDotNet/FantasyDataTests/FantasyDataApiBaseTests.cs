@@ -75,5 +75,15 @@ namespace FantasyDataTests
 
       Assert.IsTrue(response.PassingTouchdowns == 3);
     }
+
+    [TestMethod]
+    public void Get_BoxScore_ForWashington_Week1_2013()
+    {
+      var client = new FantasyDataClient();
+
+      var response = client.BoxScoreService.Get(2013, 1, "WAS");
+
+      Assert.IsTrue(response != null);
+    }
   }
 }

@@ -10,5 +10,6 @@ namespace FantasyData.Services.Contracts
   public interface IPlayerService
   {
     Players GetFreeAgents();
+    FantasyPlayers GetFantasyPlayers();
   }
 }

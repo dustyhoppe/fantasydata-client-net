@@ -11,6 +11,7 @@ namespace FantasyData.Services
   public class PlayerService : FantasyDataApiBase , IPlayerService
   {
     private static readonly string FreeAgentsKey = "FreeAgents";
+    private static readonly string FantasyPlayerKey = "FantasyPlayers";
 
     public PlayerService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
       : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
@@ -22,9 +23,20 @@ namespace FantasyData.Services
     /// <returns></returns>
     public Players GetFreeAgents()
     {
-      string url = string.Format("/{0}", FreeAgentsKey);
+      var url = string.Format("/{0}", FreeAgentsKey);
 
-      return GetRequest<Players>(url);
+      return this.GetRequest<Players>(url);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public FantasyPlayers GetFantasyPlayers()
+    {
+      var url = string.Format("/{0}", FantasyPlayerKey);
+
+      return this.GetRequest<FantasyPlayers>(url);
     }
   }
 }
