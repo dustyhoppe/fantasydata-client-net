@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FantasyData</RootNamespace>
     <AssemblyName>FantasyData</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,47 +49,21 @@
     <Compile Include="Configuration\FantasyDataSubscriptionElementCollection.cs" />
     <Compile Include="Configuration\FantasyDataSubscriptionRetrieverSection.cs" />
     <Compile Include="FantasyDataApiBase.cs" />
-    <Compile Include="FantasyDataClient.cs" />
     <Compile Include="FantasyDataException.cs" />
     <Compile Include="IFantasyDataEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\BoxScoreService.cs" />
-    <Compile Include="Services\Contracts\IBoxScoreService.cs" />
-    <Compile Include="Services\Contracts\IDailyFantasyService.cs" />
-    <Compile Include="Services\Contracts\IGameService.cs" />
-    <Compile Include="Services\Contracts\IInjuryService.cs" />
-    <Compile Include="Services\Contracts\INewsService.cs" />
-    <Compile Include="Services\Contracts\IPlayerGameStatService.cs" />
-    <Compile Include="Services\Contracts\IPlayerSeasonStatService.cs" />
-    <Compile Include="Services\Contracts\IPlayerService.cs" />
-    <Compile Include="Services\Contracts\ISeasonService.cs" />
-    <Compile Include="Services\Contracts\IStadiumService.cs" />
-    <Compile Include="Services\Contracts\ITeamDefenseService.cs" />
-    <Compile Include="Services\Contracts\ITeamService.cs" />
-    <Compile Include="Services\DailyFantasyService.cs" />
-    <Compile Include="Services\GameService.cs" />
-    <Compile Include="Services\InjuryService.cs" />
-    <Compile Include="Services\NewsService.cs" />
-    <Compile Include="Services\PlayerGameStatService.cs" />
-    <Compile Include="Services\PlayerSeasonStatService.cs" />
-    <Compile Include="Services\PlayerService.cs" />
-    <Compile Include="Services\SeasonService.cs" />
-    <Compile Include="Services\StadiumService.cs" />
-    <Compile Include="Services\TeamDefenseService.cs" />
-    <Compile Include="Services\TeamService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FantasyData.Entities\FantasyData.Entities.csproj">
-      <Project>{bc47b76c-8494-4e03-869f-1919de486774}</Project>
-      <Name>FantasyData.Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FantasyData.Utils\FantasyData.Utils.csproj">
       <Project>{5bf79131-00f6-4f98-975b-8fa84896b710}</Project>
       <Name>FantasyData.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\Contracts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

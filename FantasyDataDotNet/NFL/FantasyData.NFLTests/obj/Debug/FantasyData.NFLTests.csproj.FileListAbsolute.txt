@@ -1,0 +1,16 @@
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\obj\Debug\FantasyData.NFLTests.csprojResolveAssemblyReference.cache
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyDataTests.dll.config
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyDataTests.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyDataTests.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.NFL.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.NFL.Entities.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\RestSharp.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.Utils.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.NFL.Entities.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.NFL.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\RestSharp.xml
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\bin\Debug\FantasyData.Utils.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\obj\Debug\FantasyDataTests.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFLTests\obj\Debug\FantasyDataTests.pdb

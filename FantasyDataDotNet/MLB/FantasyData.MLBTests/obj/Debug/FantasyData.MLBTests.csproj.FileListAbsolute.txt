@@ -1,0 +1,16 @@
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLBTests.dll.config
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLBTests.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLBTests.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLB.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLB.Entities.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.Utils.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\RestSharp.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLB.Entities.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.MLB.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\FantasyData.Utils.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Debug\RestSharp.xml
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\obj\Debug\FantasyData.MLBTests.csprojResolveAssemblyReference.cache
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\obj\Debug\FantasyData.MLBTests.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLBTests\obj\Debug\FantasyData.MLBTests.pdb

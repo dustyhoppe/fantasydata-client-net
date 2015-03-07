@@ -3,3 +3,7 @@ C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\Fantasy
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Utils\obj\Debug\FantasyData.Utils.csprojResolveAssemblyReference.cache
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Utils\obj\Debug\FantasyData.Utils.dll
 C:\Users\dusti_000\Documents\GitHub\FantasyData-DotNet\FantasyDataDotNet\FantasyData.Utils\obj\Debug\FantasyData.Utils.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.Utils\bin\Debug\FantasyData.Utils.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.Utils\bin\Debug\FantasyData.Utils.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.Utils\obj\Debug\FantasyData.Utils.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.Utils\obj\Debug\FantasyData.Utils.pdb

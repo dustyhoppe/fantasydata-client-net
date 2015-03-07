@@ -1,0 +1,4 @@
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.NFL.Entities\bin\Debug\FantasyData.NFL.Entities.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.NFL.Entities\bin\Debug\FantasyData.NFL.Entities.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.NFL.Entities\obj\Debug\FantasyData.NFL.Entities.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData.NFL.Entities\obj\Debug\FantasyData.NFL.Entities.pdb
