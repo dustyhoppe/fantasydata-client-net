@@ -32,10 +32,10 @@ Once you have your API keys, you'll need to update your application's config fil
 Next, you'll need to add a **fantasyData** section to your config file.
 
 ```xml
-<fantasyData defaultSubscription="Trial">
+<fantasyData defaultSubscription="NFL">
     <subscriptions>
-      <add name="Trial" baseUrl="http://api.nfldata.apiphany.com/trial/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
-      <add name="Developer" baseUrl="http://api.nfldata.apiphany.com/developer/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
+      <add name="NFL" baseUrl="http://api.nfldata.apiphany.com/weekly/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
+      <add name="MLB" baseUrl="http://api.nfldata.apiphany.com/mlb/v2/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
     </subscriptions>
 </fantasyData>
 ```
