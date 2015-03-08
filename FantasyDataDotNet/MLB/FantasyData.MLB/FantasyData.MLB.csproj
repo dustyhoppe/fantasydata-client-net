@@ -60,7 +60,9 @@
     <Compile Include="Services\TeamSeasonService.cs" />
     <Compile Include="Services\TeamService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="nuget_pack.bat" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\FantasyData.Utils\FantasyData.Utils.csproj">
       <Project>{5bf79131-00f6-4f98-975b-8fa84896b710}</Project>

@@ -1,0 +1,13 @@
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.NFL.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.NFL.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.NFL.Entities.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.Utils.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\RestSharp.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.NFL.Entities.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.Utils.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\FantasyData.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\bin\Release\RestSharp.xml
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\obj\Release\FantasyData.NFL.csprojResolveAssemblyReference.cache
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\obj\Release\FantasyData.NFL.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL\obj\Release\FantasyData.NFL.pdb

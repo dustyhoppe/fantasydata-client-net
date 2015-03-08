@@ -1,0 +1,9 @@
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.Utils.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bin\Release\RestSharp.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.Utils.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bin\Release\RestSharp.xml
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.csprojResolveAssemblyReference.cache
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.dll
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.pdb
