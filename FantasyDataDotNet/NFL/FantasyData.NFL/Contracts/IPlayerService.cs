@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Contracts
 {
-  public interface IPlayerService
-  {
-    Players GetFreeAgents();
-    FantasyPlayers GetFantasyPlayers();
-  }
+    public interface IPlayerService
+    {
+        Players GetFreeAgents();
+        FantasyPlayers GetFantasyPlayers();
+        Player Get(int id);
+    }
 }

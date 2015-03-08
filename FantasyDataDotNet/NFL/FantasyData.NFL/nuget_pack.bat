@@ -2,7 +2,7 @@
 SET REL_PATH=..\..\nuget\nuget.exe
 SET NUGET=%ABS_PATH%%REL_PATH%
 
-SET VERSION=1.0.6.0
+SET VERSION=1.0.6.1
 
 start /wait %NUGET% pack FantasyData.NFL.csproj -IncludeReferencedProjects -Version %VERSION%
 

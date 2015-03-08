@@ -10,6 +10,7 @@ namespace FantasyData.NFL.Contracts
   public interface IGameService
   {
     bool IsGameInProgress { get; }
-    Games GetByWeek(int week, int season);
+    Games GetByWeek(int season, int week);
+    Games GetBySeason(int season);
   }
 }

@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Contracts
 {
-  public interface ISeasonService
-  {
-    int UpcomingSeason { get; }
-    int UpcomingWeek { get; }
-    int CurrentSeason { get; }
-    int CurrentWeek { get; }
-    int LastCompletedSeason { get; }
-    int LastCompletedWeek { get; }
-    TeamByeWeeks GetByeWeeks(int season);
-  }
+    public interface ISeasonService
+    {
+        int UpcomingSeason { get; }
+        int UpcomingWeek { get; }
+        int CurrentSeason { get; }
+        int CurrentWeek { get; }
+        int LastCompletedSeason { get; }
+        int LastCompletedWeek { get; }
+        TeamByeWeeks GetByeWeeks(int season);
+        Scores GetScores(int season);
+    }
 }

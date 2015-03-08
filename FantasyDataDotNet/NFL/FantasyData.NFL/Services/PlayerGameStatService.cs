@@ -26,7 +26,7 @@ namespace FantasyData.NFL.Services
     /// <param name="week"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public PlayerGame GetByGame(int playerId, int week, int season)
+    public PlayerGame GetByGame(int playerId, int season, int week)
     {
       string url = string.Format("/{0}/{1}/{2}/{3}", PlayerGameStatsByPlayerKey, season, week, playerId);
 
@@ -41,7 +41,7 @@ namespace FantasyData.NFL.Services
     /// <param name="week"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public PlayerGames GetByTeamAndWeek(TeamTypes team, int week, int season)
+    public PlayerGames GetByTeamAndWeek(TeamTypes team, int season, int week)
     {
       string url = string.Format("/{0}/{1}/{2}/{3}", PlayerGameStatsByTeamKey, season, week, team.ToString());
 
@@ -55,7 +55,7 @@ namespace FantasyData.NFL.Services
     /// <param name="week"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public PlayerGames GetByWeek(int week, int season)
+    public PlayerGames GetByWeek(int season, int week)
     {
       string url = string.Format("/{0}/{1}/{2}", PlayerGameStatsByWeekKey, season, week);
 

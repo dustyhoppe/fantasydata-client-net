@@ -15,5 +15,6 @@ namespace FantasyData.NFL.Contracts
         BoxScores RecentlyUpdated(int minutesAgo);
         BoxScores GetActive();
         BoxScores GetFinal();
+        BoxScores GetLive();
     }
 }

@@ -16,6 +16,7 @@ namespace FantasyData.NFL.Services
         private static readonly string BoxScoresKey = "BoxScores";
         private static readonly string FinalBoxScoresKey = "FinalBoxScores";
         private static readonly string ActiveBoxScoresKey = "ActiveBoxScores";
+        private static readonly string LiveBoxScoresKey = "LiveBoxScores";
         private static readonly string RecentlyUpdatedBoxScoresKey = "RecentlyUpdatedBoxScores";
 
         public BoxScoreService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
@@ -80,6 +81,16 @@ namespace FantasyData.NFL.Services
         public BoxScores GetFinal()
         {
             var url = string.Format("/{0}", FinalBoxScoresKey);
+            return this.GetRequest<BoxScores>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public BoxScores GetLive()
+        {
+            var url = string.Format("/{0}", LiveBoxScoresKey);
             return this.GetRequest<BoxScores>(url);
         }
     }
