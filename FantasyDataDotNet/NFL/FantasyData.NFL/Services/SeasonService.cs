@@ -118,11 +118,11 @@ namespace FantasyData.NFL.Services
     /// </summary>
     /// <param name="season"></param>
     /// <returns></returns>
-    public IEnumerable<TeamByeWeek> GetByeWeeks(int season)
+    public TeamByeWeeks GetByeWeeks(int season)
     {
       var url = string.Format("/{0}/{1}", ByesKey, season);
 
-      return GetRequest<List<TeamByeWeek>>(url);
+      return GetRequest<TeamByeWeeks>(url);
     }
   }
 }

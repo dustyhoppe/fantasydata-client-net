@@ -15,6 +15,6 @@ namespace FantasyData.NFL.Contracts
     int CurrentWeek { get; }
     int LastCompletedSeason { get; }
     int LastCompletedWeek { get; }
-    IEnumerable<TeamByeWeek> GetByeWeeks(int season);
+    TeamByeWeeks GetByeWeeks(int season);
   }
 }

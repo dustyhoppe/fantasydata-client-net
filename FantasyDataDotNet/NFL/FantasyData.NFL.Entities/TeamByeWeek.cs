@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Entities
 {
-  public class TeamByeWeek
-  {
-    public string Team { get; set; }
-    public int Season { get; set; }
-    public int Week { get; set; }
-  }
+    public class TeamByeWeeks : List<TeamByeWeek>
+    { }
+
+    public class TeamByeWeek
+    {
+        public string Team { get; set; }
+        public int Season { get; set; }
+        public int Week { get; set; }
+    }
 }

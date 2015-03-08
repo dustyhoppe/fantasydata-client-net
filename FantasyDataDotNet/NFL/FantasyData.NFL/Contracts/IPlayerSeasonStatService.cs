@@ -10,6 +10,6 @@ namespace FantasyData.NFL.Contracts
   public interface IPlayerSeasonStatService
   {
     PlayerSeasons GetByPlayer(int playerId, int season);
-    PlayerSeasons GetByTeam(Teams team, int season);
+    PlayerSeasons GetByTeam(TeamTypes team, int season);
   }
 }

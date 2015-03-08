@@ -1,4 +1,5 @@
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\bin\Release\FantasyData.MLB.Entities.dll
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\bin\Release\FantasyData.MLB.Entities.pdb
+C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.dll
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.pdb

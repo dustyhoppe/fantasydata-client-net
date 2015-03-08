@@ -23,7 +23,7 @@ namespace FantasyData.NFL.Services
     /// <param name="team"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public PlayerSeasons GetByTeam(Entities.Teams team, int season)
+    public PlayerSeasons GetByTeam(Entities.TeamTypes team, int season)
     {
       string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByTeamKey, season, team.ToString());
 

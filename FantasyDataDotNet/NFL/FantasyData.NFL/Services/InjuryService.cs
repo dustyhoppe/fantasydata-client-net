@@ -38,7 +38,7 @@ namespace FantasyData.NFL.Services
     /// <param name="week"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public Injuries GetByWeekAndTeam(Teams team, int week, int season)
+    public Injuries GetByWeekAndTeam(TeamTypes team, int week, int season)
     {
       string url = string.Format("/{0}/{1}/{2}/{3}", InjuriesKey, season, week, team.ToString());
 

@@ -9,7 +9,7 @@ namespace FantasyData.NFL.Contracts
 {
   public interface ITeamDefenseService
   {
-    FantasyDefenseGames GetGames(int week, int season);
+    FantasyDefenseGames GetGames(int season, int week);
     FantasyDefenseSeasons GetSeasons(int season);
   }
 }

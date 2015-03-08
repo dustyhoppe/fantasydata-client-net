@@ -41,7 +41,7 @@ namespace FantasyData.NFL.Services
     /// <param name="week"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public PlayerGames GetByTeamAndWeek(Teams team, int week, int season)
+    public PlayerGames GetByTeamAndWeek(TeamTypes team, int week, int season)
     {
       string url = string.Format("/{0}/{1}/{2}/{3}", PlayerGameStatsByTeamKey, season, week, team.ToString());
 

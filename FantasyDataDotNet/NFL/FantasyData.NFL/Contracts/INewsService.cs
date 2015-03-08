@@ -10,7 +10,7 @@ namespace FantasyData.NFL.Contracts
   public interface INewsService
   {
     News Get();
-    News GetForTeam(Teams team);
+    News GetForTeam(TeamTypes team);
     News GetForPlayer(int playerId);
   }
 }

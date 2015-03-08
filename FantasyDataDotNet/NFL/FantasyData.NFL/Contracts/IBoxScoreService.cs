@@ -11,7 +11,9 @@ namespace FantasyData.NFL.Contracts
     public interface IBoxScoreService
     {
         BoxScore Get(int season, int week, string homeTeam);
-
+        BoxScores GetForSeasonAndWeek(int season, int week);
         BoxScores RecentlyUpdated(int minutesAgo);
+        BoxScores GetActive();
+        BoxScores GetFinal();
     }
 }

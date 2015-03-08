@@ -18,7 +18,7 @@ namespace FantasyData.NFL.Entities
     public int HomeScore { get; set; }
     public string HomeTeam { get; set; }
     public string PlayDescription { get; set; }
-    public int Quarter { get; set; }
+    public string Quarter { get; set; }
     public long ScoringPlayID { get; set; }
     public int Season { get; set; }
     public int SeasonType { get; set; }

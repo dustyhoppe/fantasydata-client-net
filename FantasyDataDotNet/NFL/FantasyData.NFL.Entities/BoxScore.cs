@@ -9,26 +9,26 @@
   {
     public BoxScore()
     {
-      AwayDefense = new PlayerDefenses();
-      AwayFantasyDefense = new FantasyDefenseGames();
-      AwayKickPuntReturns = new KickPuntReturns();
-      AwayKicking = new PlayerKickings();
-      AwayPassing = new PlayerPassings();
-      AwayPunting = new PlayerPuntings();
-      AwayReceiving = new PlayerReceivings();
-      AwayRushing = new PlayerRushings();
+        AwayDefense = new PlayerDefenses();
+        AwayFantasyDefense = new FantasyDefenseGames();
+        AwayKickPuntReturns = new KickPuntReturns();
+        AwayKicking = new PlayerKickings();
+        AwayPassing = new PlayerPassings();
+        AwayPunting = new PlayerPuntings();
+        AwayReceiving = new PlayerReceivings();
+        AwayRushing = new PlayerRushings();
 
 
-      HomeDefense = new PlayerDefenses();
-      HomeFantasyDefense = new FantasyDefenseGames();
-      HomeKickPuntReturns = new KickPuntReturns();
-      HomeKicking = new PlayerKickings();
-      HomePassing = new PlayerPassings();
-      HomePunting = new PlayerPuntings();
-      HomeReceiving = new PlayerReceivings();
-      HomeRushing = new PlayerRushings();
+        HomeDefense = new PlayerDefenses();
+        HomeFantasyDefense = new FantasyDefenseGames();
+        HomeKickPuntReturns = new KickPuntReturns();
+        HomeKicking = new PlayerKickings();
+        HomePassing = new PlayerPassings();
+        HomePunting = new PlayerPuntings();
+        HomeReceiving = new PlayerReceivings();
+        HomeRushing = new PlayerRushings();
 
-      //Game = new Game();
+      Game = new Game();
       ScoringDetails = new ScoringDetails();
       ScoringPlays = new ScoringPlays();
     }
@@ -53,7 +53,7 @@
     public PlayerRushings HomeRushing { get; set; }
 
     // Bug: Deserialization of this property causes deserialization of entire object to break.
-    //public Game Game { get; set; }
+    public Game Game { get; set; }
     public ScoringDetails ScoringDetails { get; set; }
     public ScoringPlays ScoringPlays { get; set; }
   }

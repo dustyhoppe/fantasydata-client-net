@@ -8,24 +8,34 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Services
 {
-  public class TeamService : FantasyDataApiBase , ITeamService
-  {
-    private static readonly string StandingsKey = "Standings";
-
-    public TeamService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
-      : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
-    { }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="season"></param>
-    /// <returns></returns>
-    public Standings GetStandingsBySeason(int season)
+    public class TeamService : FantasyDataApiBase, ITeamService
     {
-      string url = string.Format("/{0}/{1}", StandingsKey, season);
+        private static readonly string StandingsKey = "Standings";
+        private static readonly string TeamsKey = "Teams";
 
-      return GetRequest<Standings>(url);
+        public TeamService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
+            : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
+        { }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public Standings GetStandingsBySeason(int season)
+        {
+            string url = string.Format("/{0}/{1}", StandingsKey, season);
+            return GetRequest<Standings>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public Teams Get()
+        {
+            string url = string.Format("/{0}", TeamsKey);
+            return GetRequest<Teams>(url);
+        }
     }
-  }
 }

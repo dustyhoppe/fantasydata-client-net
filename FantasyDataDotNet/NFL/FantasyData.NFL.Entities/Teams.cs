@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Entities
 {
-  public enum Teams
+  public enum TeamTypes
   {
     CIN,
     CLE,

@@ -27,7 +27,7 @@ namespace FantasyData.NFL.Services
     }
 
 
-    public News GetForTeam(Teams team)
+    public News GetForTeam(TeamTypes team)
     {
       var url = string.Format("/{0}/{1}", NewsByTeamKey, team.ToString());
 

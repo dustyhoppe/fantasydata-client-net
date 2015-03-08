@@ -22,11 +22,11 @@ namespace FantasyData.NFL.Services
     /// </summary>
     /// <param name="date"></param>
     /// <returns></returns>
-    public IEnumerable<DailyFantasyPlayer> GetDailyFantasyPlayers(DateTime date)
+    public DailyFantasyPlayers GetDailyFantasyPlayers(DateTime date)
     {
       string url = string.Format("/{0}/{1}", DailyFantasyPlayersKey, date.ToApiDate());
 
-      return GetRequest<List<DailyFantasyPlayer>>(url);
+      return GetRequest<DailyFantasyPlayers>(url);
     }
   }
 }

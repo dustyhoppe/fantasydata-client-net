@@ -24,7 +24,7 @@ namespace FantasyData.NFL.Services
     /// <param name="week"></param>
     /// <param name="season"></param>
     /// <returns></returns>
-    public FantasyDefenseGames GetGames(int week, int season)
+    public FantasyDefenseGames GetGames(int season, int week)
     {
       string url = string.Format("/{0}/{1}/{2}", FantasyDefenseGameByWeekKey, season, week);
 

@@ -20,21 +20,21 @@ namespace FantasyData.NFL.Entities
 
     public bool Active { get; set; }
     public int Age { get; set; }
-    public decimal AverageDraftPosition { get; set; }
+    public decimal? AverageDraftPosition { get; set; }
     public DateTime BirthDate { get; set; }
     public string BirthDateString { get; set; }
-    public int ByeWeek { get; set; }
+    public int? ByeWeek { get; set; }
     public string College { get; set; }
-    public int CollegeDraftPick { get; set; }
-    public int CollegeDraftRound { get; set; }
+    public int? CollegeDraftPick { get; set; }
+    public int? CollegeDraftRound { get; set; }
     public string CollegeDraftTeam { get; set; }
     public int CollegeDraftYear { get; set; }
     public string CurrentStatus { get; set; }
     public string CurrentTeam { get; set; }
-    public int DepthDisplayOrder { get; set; }
-    public int DepthOrder { get; set; }
+    public int? DepthDisplayOrder { get; set; }
+    public int? DepthOrder { get; set; }
     public string DepthPosition { get; set; }
-    public int DepthPositionCategory { get; set; }
+    public string DepthPositionCategory { get; set; }
     public int Experience { get; set; }
     public string ExperienceString { get; set; }
     public string FantasyPosition { get; set; }

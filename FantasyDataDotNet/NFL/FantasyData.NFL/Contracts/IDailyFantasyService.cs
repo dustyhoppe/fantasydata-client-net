@@ -9,6 +9,6 @@ namespace FantasyData.NFL.Contracts
 {
   public interface IDailyFantasyService
   {
-    IEnumerable<DailyFantasyPlayer> GetDailyFantasyPlayers(DateTime date);
+    DailyFantasyPlayers GetDailyFantasyPlayers(DateTime date);
   }
 }

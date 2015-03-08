@@ -10,7 +10,7 @@ namespace FantasyData.NFL.Contracts
   public interface IPlayerGameStatService
   {
     PlayerGame GetByGame(int playerId, int week, int season);
-    PlayerGames GetByTeamAndWeek(Teams team, int week, int season);
+    PlayerGames GetByTeamAndWeek(TeamTypes team, int week, int season);
     PlayerGames GetByWeek(int week, int season);
   }
 }

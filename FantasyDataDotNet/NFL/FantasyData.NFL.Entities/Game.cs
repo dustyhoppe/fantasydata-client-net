@@ -214,7 +214,7 @@ namespace FantasyData.NFL.Entities
     public int Humidity { get; set; }
     public bool IsGameOver { get; set; }
     public decimal OverUnder { get; set; }
-    public int PlayingSurface { get; set; }
+    public string PlayingSurface { get; set; }
     public int PointSpread { get; set; }
     public int Season { get; set; }
     public int SeasonType { get; set; }
