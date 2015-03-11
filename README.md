@@ -1,4 +1,4 @@
-# NET-FantasyData
+# FantasyData .NET Client
 .NET client wrapper for the FantasyData API
 
 
