@@ -47,6 +47,7 @@
     <Compile Include="Contracts\IPlayerGameStatService.cs" />
     <Compile Include="Contracts\IPlayerSeasonStatService.cs" />
     <Compile Include="Contracts\IPlayerService.cs" />
+    <Compile Include="Contracts\IScheduleService.cs" />
     <Compile Include="Contracts\ISeasonService.cs" />
     <Compile Include="Contracts\IStadiumService.cs" />
     <Compile Include="Contracts\ITeamDefenseService.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Services\PlayerGameStatService.cs" />
     <Compile Include="Services\PlayerSeasonStatService.cs" />
     <Compile Include="Services\PlayerService.cs" />
+    <Compile Include="Services\ScheduleService.cs" />
     <Compile Include="Services\SeasonService.cs" />
     <Compile Include="Services\StadiumService.cs" />
     <Compile Include="Services\TeamDefenseService.cs" />

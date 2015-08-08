@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Contracts
 {
-  public interface IGameService
-  {
-    bool IsGameInProgress { get; }
-    Games GetByWeek(int season, int week);
-    Games GetBySeason(int season);
-  }
+    public interface IGameService
+    {
+        bool IsGameInProgress { get; }
+
+        Games GetByWeek(int season, int week);
+        Task<Games> GetByWeekAsync(int season, int week);
+
+        Games GetBySeason(int season);
+        Task<Games> GetBySeasonAsync(int season);
+    }
 }

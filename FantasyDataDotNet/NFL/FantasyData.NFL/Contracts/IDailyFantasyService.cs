@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Contracts
 {
-  public interface IDailyFantasyService
-  {
-    DailyFantasyPlayers GetDailyFantasyPlayers(DateTime date);
-  }
+    public interface IDailyFantasyService
+    {
+        DailyFantasyPlayers GetDailyFantasyPlayers(DateTime date);
+        Task<DailyFantasyPlayers> GetDailyFantasyPlayersAsync(DateTime date);
+    }
 }

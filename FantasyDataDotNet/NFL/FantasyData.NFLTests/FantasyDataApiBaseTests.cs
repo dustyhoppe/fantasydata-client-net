@@ -393,5 +393,28 @@ namespace FantasyDataTests
             var response = client.PlayerSeasonStatService.GetByTeam(TeamTypes.DEN, 2014);
             Assert.IsTrue(response.Count == 59);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [TestMethod]
+        public void GetScheduleBySeason_2015_RegularSeason_IsNotNull()
+        {
+            var client = new FantasyDataClient();
+            var response = client.ScheduleService.Get(2015, SeasonTypes.REGULAR);
+            Assert.IsNotNull(response);
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [TestMethod]
+        public async Task GetScheduleBySeasonAsync_2015_RegularSeason_IsNotNull()
+        {
+            var client = new FantasyDataClient();
+            var response = await client.ScheduleService.GetAsync(2015, SeasonTypes.REGULAR);
+            Assert.IsNotNull(response);
+        }
     }
 }

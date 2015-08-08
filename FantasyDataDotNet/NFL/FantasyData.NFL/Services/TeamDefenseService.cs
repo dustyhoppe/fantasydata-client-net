@@ -8,39 +8,64 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Services
 {
-  public class TeamDefenseService : FantasyDataApiBase, ITeamDefenseService
-  {
-    private static readonly string FantasyDefenseGameByWeekKey = "FantasyDefenseByGame";
-    private static readonly string FantasyDefenseSeasonKey = "FantasyDefenseBySeason";
-
-    public TeamDefenseService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
-      : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
-    { }
-
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="week"></param>
-    /// <param name="season"></param>
-    /// <returns></returns>
-    public FantasyDefenseGames GetGames(int season, int week)
+    public class TeamDefenseService : FantasyDataApiBase, ITeamDefenseService
     {
-      string url = string.Format("/{0}/{1}/{2}", FantasyDefenseGameByWeekKey, season, week);
+        private static readonly string FantasyDefenseGameByWeekKey = "FantasyDefenseByGame";
+        private static readonly string FantasyDefenseSeasonKey = "FantasyDefenseBySeason";
 
-      return GetRequest<FantasyDefenseGames>(url);
+        public TeamDefenseService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
+            : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
+        { }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="week"></param>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public FantasyDefenseGames GetGames(int season, int week)
+        {
+            string url = string.Format("/{0}/{1}/{2}", FantasyDefenseGameByWeekKey, season, week);
+
+            return GetRequest<FantasyDefenseGames>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="week"></param>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public async Task<FantasyDefenseGames> GetGamesAsync(int season, int week)
+        {
+            string url = string.Format("/{0}/{1}/{2}", FantasyDefenseGameByWeekKey, season, week);
+
+            return await this.GetRequestAsync<FantasyDefenseGames>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public FantasyDefenseSeasons GetSeasons(int season)
+        {
+            string url = string.Format("/{0}/{1}", FantasyDefenseSeasonKey, season);
+
+            return GetRequest<FantasyDefenseSeasons>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public async Task<FantasyDefenseSeasons> GetSeasonsAsync(int season)
+        {
+            string url = string.Format("/{0}/{1}", FantasyDefenseSeasonKey, season);
+
+            return await this.GetRequestAsync<FantasyDefenseSeasons>(url);
+        }
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="season"></param>
-    /// <returns></returns>
-    public FantasyDefenseSeasons GetSeasons(int season)
-    {
-      string url = string.Format("/{0}/{1}", FantasyDefenseSeasonKey, season);
-
-      return GetRequest<FantasyDefenseSeasons>(url);
-    }
-  }
 }

@@ -67,6 +67,11 @@ namespace FantasyData
 
         #endregion
 
+        public Task<T> GetRequestAsync<T>(string path, params object[] args) where T : new()
+        {
+            return GetRequestAsync<T>(path, string.Empty, args);
+        }
+
         public T GetRequest<T>(string path, params object[] args) where T : new()
         {
             return GetRequest<T>(path, string.Empty, args);
@@ -90,6 +95,31 @@ namespace FantasyData
             }
 
             return response.Data;
+        }
+
+        public Task<T> GetRequestAsync<T>(string path, string rootElement, params object[] args) where T : new()
+        {
+            RestRequest request = new RestRequest(BuildUrl(path, args));
+            if (!string.IsNullOrWhiteSpace(rootElement)) request.RootElement = rootElement;
+            InitializeRequest(request);
+
+            TaskCompletionSource<T> result = new TaskCompletionSource<T>();
+
+            _client.ExecuteAsync<T>(request, response =>
+            {
+                if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    throw new FantasyDataException("Not Found");
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                {
+                    throw new FantasyDataException("Internal Server Error");
+                }
+
+                result.SetResult(response.Data);
+            });
+
+            return result.Task;
         }
 
         protected int GetInt(string path, params object[] args)

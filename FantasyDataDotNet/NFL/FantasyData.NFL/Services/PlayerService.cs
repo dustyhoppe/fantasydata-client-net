@@ -32,10 +32,30 @@ namespace FantasyData.NFL.Services
         /// 
         /// </summary>
         /// <returns></returns>
+        public async Task<Players> GetFreeAgentsAsync()
+        {
+            var url = string.Format("/{0}", FreeAgentsKey);
+            return await this.GetRequestAsync<Players>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public FantasyPlayers GetFantasyPlayers()
         {
             var url = string.Format("/{0}", FantasyPlayerKey);
             return this.GetRequest<FantasyPlayers>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<FantasyPlayers> GetFantasyPlayersAsync()
+        {
+            var url = string.Format("/{0}", FantasyPlayerKey);
+            return await this.GetRequestAsync<FantasyPlayers>(url);
         }
 
         /// <summary>
@@ -47,6 +67,17 @@ namespace FantasyData.NFL.Services
         {
             var url = string.Format("/{0}/{1}", PlayerKey, id);
             return this.GetRequest<Player>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<Player> GetAsync(int id)
+        {
+            var url = string.Format("/{0}/{1}", PlayerKey, id);
+            return await this.GetRequestAsync<Player>(url);
         }
     }
 }

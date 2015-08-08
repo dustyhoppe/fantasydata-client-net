@@ -16,3 +16,5 @@ C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\Fantas
 C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.csprojResolveAssemblyReference.cache
 C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.dll
 C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.NFL.Entities.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.NFL.Entities.pdb

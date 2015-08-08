@@ -37,6 +37,19 @@ namespace FantasyData.NFL.Services
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="season"></param>
+        /// <param name="week"></param>
+        /// <param name="homeTeam"></param>
+        /// <returns></returns>
+        public async Task<BoxScore> GetAsync(int season, int week, string homeTeam)
+        {
+            var url = string.Format("/{0}/{1}/{2}/{3}", BoxScoreKey, season, week, homeTeam);
+            return await this.GetRequestAsync<BoxScore>(url);
+        }
+
+        /// <summary>
         /// Returns box scores that have changed in last X minutes.
         /// </summary>
         /// <param name="minutesAgo">Number of minutes. (Must be 1 or 2 )</param>
@@ -53,6 +66,22 @@ namespace FantasyData.NFL.Services
         }
 
         /// <summary>
+        /// Returns box scores that have changed in last X minutes.
+        /// </summary>
+        /// <param name="minutesAgo">Number of minutes. (Must be 1 or 2 )</param>
+        /// <returns></returns>
+        public async Task<BoxScores> RecentlyUpdatedAsync(int minutesAgo)
+        {
+            if (minutesAgo < 1 || minutesAgo > 2)
+            {
+                throw new FantasyDataException("MinutesAgo must be 1 or 2.");
+            }
+
+            var url = string.Format("/{0}/{1}", RecentlyUpdatedBoxScoresKey, minutesAgo);
+            return await this.GetRequestAsync<BoxScores>(url);
+        }
+
+        /// <summary>
         /// Gets box scores for all games that are either in-progress or have been updated within the last 30 minutes.
         /// </summary>
         /// <returns></returns>
@@ -60,6 +89,16 @@ namespace FantasyData.NFL.Services
         {
             var url = string.Format("/{0}", ActiveBoxScoresKey);
             return this.GetRequest<BoxScores>(url);
+        }
+
+        /// <summary>
+        /// Gets box scores for all games that are either in-progress or have been updated within the last 30 minutes.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<BoxScores> GetActiveAsync()
+        {
+            var url = string.Format("/{0}", ActiveBoxScoresKey);
+            return await this.GetRequestAsync<BoxScores>(url);
         }
 
         /// <summary>
@@ -77,6 +116,18 @@ namespace FantasyData.NFL.Services
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="season"></param>
+        /// <param name="week"></param>
+        /// <returns></returns>
+        public async Task<BoxScores> GetForSeasonAndWeekAsync(int season, int week)
+        {
+            var url = string.Format("/{0}/{1}/{2}", BoxScoresKey, season, week);
+            return await this.GetRequestAsync<BoxScores>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <returns></returns>
         public BoxScores GetFinal()
         {
@@ -88,10 +139,30 @@ namespace FantasyData.NFL.Services
         /// 
         /// </summary>
         /// <returns></returns>
+        public async Task<BoxScores> GetFinalAsync()
+        {
+            var url = string.Format("/{0}", FinalBoxScoresKey);
+            return await this.GetRequestAsync<BoxScores>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public BoxScores GetLive()
         {
             var url = string.Format("/{0}", LiveBoxScoresKey);
             return this.GetRequest<BoxScores>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<BoxScores> GetLiveAsync()
+        {
+            var url = string.Format("/{0}", LiveBoxScoresKey);
+            return await this.GetRequestAsync<BoxScores>(url);
         }
     }
 }

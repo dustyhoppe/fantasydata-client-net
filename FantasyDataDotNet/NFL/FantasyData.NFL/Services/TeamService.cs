@@ -31,11 +31,32 @@ namespace FantasyData.NFL.Services
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public async Task<Standings> GetStandingsBySeasonAsync(int season)
+        {
+            string url = string.Format("/{0}/{1}", StandingsKey, season);
+            return await this.GetRequestAsync<Standings>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <returns></returns>
         public Teams Get()
         {
             string url = string.Format("/{0}", TeamsKey);
             return GetRequest<Teams>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Teams> GetAsync()
+        {
+            string url = string.Format("/{0}", TeamsKey);
+            return await this.GetRequestAsync<Teams>(url);
         }
     }
 }

@@ -8,39 +8,65 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Services
 {
-  public class PlayerSeasonStatService : FantasyDataApiBase, IPlayerSeasonStatService
-  {
-    private static readonly string PlayerSeasonStatsByTeamKey = "PlayerSeasonStatsByTeam";
-    private static readonly string PlayerSeasonStatsByPlayerKey = "PlayerSeasonStatsByPlayerID";
-
-    public PlayerSeasonStatService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
-      : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
-    { }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="team"></param>
-    /// <param name="season"></param>
-    /// <returns></returns>
-    public PlayerSeasons GetByTeam(Entities.TeamTypes team, int season)
+    public class PlayerSeasonStatService : FantasyDataApiBase, IPlayerSeasonStatService
     {
-      string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByTeamKey, season, team.ToString());
+        private static readonly string PlayerSeasonStatsByTeamKey = "PlayerSeasonStatsByTeam";
+        private static readonly string PlayerSeasonStatsByPlayerKey = "PlayerSeasonStatsByPlayerID";
 
-      return GetRequest<PlayerSeasons>(url);
+        public PlayerSeasonStatService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
+            : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
+        { }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="team"></param>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public PlayerSeasons GetByTeam(Entities.TeamTypes team, int season)
+        {
+            string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByTeamKey, season, team.ToString());
+
+            return GetRequest<PlayerSeasons>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="team"></param>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public async Task<PlayerSeasons> GetByTeamAsync(Entities.TeamTypes team, int season)
+        {
+            string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByTeamKey, season, team.ToString());
+
+            return await this.GetRequestAsync<PlayerSeasons>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="playerId"></param>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public PlayerSeasons GetByPlayer(int playerId, int season)
+        {
+            string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByPlayerKey, season, playerId);
+
+            return GetRequest<PlayerSeasons>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="playerId"></param>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public async Task<PlayerSeasons> GetByPlayerAsync(int playerId, int season)
+        {
+            string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByPlayerKey, season, playerId);
+
+            return await this.GetRequestAsync<PlayerSeasons>(url);
+        }
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="playerId"></param>
-    /// <param name="season"></param>
-    /// <returns></returns>
-    public PlayerSeasons GetByPlayer(int playerId, int season)
-    {
-      string url = string.Format("/{0}/{1}/{2}", PlayerSeasonStatsByPlayerKey, season, playerId);
-
-      return GetRequest<PlayerSeasons>(url);
-    }
-  }
 }

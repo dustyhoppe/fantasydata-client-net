@@ -131,10 +131,33 @@ namespace FantasyData.NFL.Services
         /// </summary>
         /// <param name="season"></param>
         /// <returns></returns>
+        public async Task<TeamByeWeeks> GetByeWeeksAsync(int season)
+        {
+            var url = string.Format("/{0}/{1}", ByesKey, season);
+
+            return await this.GetRequestAsync<TeamByeWeeks>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="season"></param>
+        /// <returns></returns>
         public Scores GetScores(int season)
         {
             var url = string.Format("/{0}/{1}", ScoresKey, season);
             return this.GetRequest<Scores>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="season"></param>
+        /// <returns></returns>
+        public async Task<Scores> GetScoresAsync(int season)
+        {
+            var url = string.Format("/{0}/{1}", ScoresKey, season);
+            return await this.GetRequestAsync<Scores>(url);
         }
     }
 }

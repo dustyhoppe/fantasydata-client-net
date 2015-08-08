@@ -30,3 +30,5 @@ C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\Fa
 C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLBTests\obj\Release\FantasyData.MLBTests.csprojResolveAssemblyReference.cache
 C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLBTests\obj\Release\FantasyData.MLBTests.dll
 C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLBTests\obj\Release\FantasyData.MLBTests.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Release\FantasyData.NFL.Entities.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLBTests\bin\Release\FantasyData.NFL.Entities.pdb

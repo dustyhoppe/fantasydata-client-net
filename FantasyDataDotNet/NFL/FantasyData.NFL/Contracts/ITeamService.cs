@@ -11,6 +11,9 @@ namespace FantasyData.NFL.Contracts
     public interface ITeamService
     {
         Standings GetStandingsBySeason(int season);
+        Task<Standings> GetStandingsBySeasonAsync(int season);
+
         Teams Get();
+        Task<Teams> GetAsync();
     }
 }

@@ -15,7 +15,11 @@ namespace FantasyData.NFL.Contracts
         int CurrentWeek { get; }
         int LastCompletedSeason { get; }
         int LastCompletedWeek { get; }
+
         TeamByeWeeks GetByeWeeks(int season);
+        Task<TeamByeWeeks> GetByeWeeksAsync(int season);
+
         Scores GetScores(int season);
+        Task<Scores> GetScoresAsync(int season);
     }
 }

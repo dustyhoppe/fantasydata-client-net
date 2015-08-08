@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Contracts
 {
-    public interface IStadiumService
+    public interface IScheduleService
     {
-        StadiumDetails Get();
-        Task<StadiumDetails> GetAsync();
+        ScheduledGames Get(int season, SeasonTypes seasonType);
+        Task<ScheduledGames> GetAsync(int season, SeasonTypes seasonType);
     }
 }

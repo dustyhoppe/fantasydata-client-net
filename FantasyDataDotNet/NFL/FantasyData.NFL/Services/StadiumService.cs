@@ -8,23 +8,34 @@ using System.Threading.Tasks;
 
 namespace FantasyData.NFL.Services
 {
-  public class StadiumService : FantasyDataApiBase, IStadiumService
-  {
-    private static readonly string StadiumsKey = "Stadiums";
-
-    public StadiumService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
-      : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
-    { }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    public StadiumDetails Get()
+    public class StadiumService : FantasyDataApiBase, IStadiumService
     {
-      string url = string.Format("/{0}", StadiumsKey);
+        private static readonly string StadiumsKey = "Stadiums";
 
-      return GetRequest<StadiumDetails>(url);
+        public StadiumService(string baseUrl, string primarySubscriptionKey, string secondarySubscriptionKey)
+            : base(baseUrl, primarySubscriptionKey, secondarySubscriptionKey)
+        { }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public StadiumDetails Get()
+        {
+            string url = string.Format("/{0}", StadiumsKey);
+
+            return GetRequest<StadiumDetails>(url);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<StadiumDetails> GetAsync()
+        {
+            string url = string.Format("/{0}", StadiumsKey);
+
+            return await this.GetRequestAsync<StadiumDetails>(url);
+        }
     }
-  }
 }
