@@ -7,3 +7,12 @@ C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\bi
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.csprojResolveAssemblyReference.cache
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.dll
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.Utils.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\RestSharp.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\FantasyData.Utils.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\bin\Release\RestSharp.xml
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.csprojResolveAssemblyReference.cache
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\FantasyData\obj\Release\FantasyData.pdb

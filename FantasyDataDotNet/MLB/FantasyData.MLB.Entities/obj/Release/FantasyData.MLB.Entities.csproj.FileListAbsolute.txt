@@ -3,3 +3,8 @@ C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyDat
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.dll
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\bin\Release\FantasyData.MLB.Entities.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\bin\Release\FantasyData.MLB.Entities.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.csprojResolveAssemblyReference.cache
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\MLB\FantasyData.MLB.Entities\obj\Release\FantasyData.MLB.Entities.pdb

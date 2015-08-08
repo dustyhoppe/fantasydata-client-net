@@ -34,7 +34,7 @@ Next, you'll need to add a **fantasyData** section to your config file.
 ```xml
 <fantasyData defaultSubscription="NFL">
     <subscriptions>
-      <add name="NFL" baseUrl="http://api.nfldata.apiphany.com/weekly/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
+      <add name="NFL" baseUrl="http://api.nfldata.apiphany.com/nfl/v2/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
       <add name="MLB" baseUrl="http://api.nfldata.apiphany.com/mlb/v2/" primarySubscriptionKey="***primarySubscriptionKey***" secondarySubscriptionKey="***secondarySubscriptionKey***"/>
     </subscriptions>
 </fantasyData>

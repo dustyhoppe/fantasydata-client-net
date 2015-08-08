@@ -3,3 +3,8 @@ C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyDat
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\obj\Release\FantasyData.NFL.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\obj\Release\FantasyData.NFL.Entities.dll
 C:\Users\Dusty\Documents\GitHub\Net-FantasyData\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\obj\Release\FantasyData.NFL.Entities.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\bin\Release\FantasyData.NFL.Entities.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\bin\Release\FantasyData.NFL.Entities.pdb
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\obj\Release\FantasyData.NFL.Entities.csprojResolveAssemblyReference.cache
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\obj\Release\FantasyData.NFL.Entities.dll
+C:\Users\dhoppe\Documents\github\fantasydata-client-net\FantasyDataDotNet\NFL\FantasyData.NFL.Entities\obj\Release\FantasyData.NFL.Entities.pdb
